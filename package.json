@@ -11,7 +11,10 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.7.12",
-    "jspm": "^0.15.7"
+    "jasmine-core": "^2.3.4",
+    "jspm": "^0.15.7",
+    "karma": "^0.12.36",
+    "karma-jasmine": "^0.3.5"
   },
   "jspm": {
     "directories": {

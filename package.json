@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "browser-sync": "node_modules/.bin/browser-sync start --server --directory"
+    "browser-sync": "node_modules/.bin/browser-sync start --server src"
   },
   "author": "Tilf AB",
   "license": "ISC",
@@ -14,7 +14,9 @@
     "jspm": "^0.15.7"
   },
   "jspm": {
-    "directories": {},
+    "directories": {
+      "baseURL": "src"
+    },
     "dependencies": {
       "react": "npm:react@^0.14.0-alpha3"
     },

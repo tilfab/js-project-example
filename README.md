@@ -19,7 +19,7 @@ Use Babel as ES6 transpiler
 
 #### For React project
 
-4. Go in to `config.js` add `"blacklist": []` to `babelOptions`-property  
+4. Go in to `src/config.js` add `"blacklist": []` to `babelOptions`-property  
 Removes React from babel blacklist... will be removed as of React 0.17
 
 5. `jspm install react`

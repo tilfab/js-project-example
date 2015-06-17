@@ -30,7 +30,8 @@ Removes React from babel blacklist... will be removed as of React 0.17
 
 2. `npm install karma-jasmine karma-jspm --save-dev`
 
-3. `./node_modules/.bin/karma init` See [http://karma-runner.github.io/0.12/intro/configuration.html](Karmas configuration)
+3. `./node_modules/.bin/karma init`  
+See [Karmas configuration](http://karma-runner.github.io/0.12/intro/configuration.html)
 
 4. Edit `karma.conf.js`
 

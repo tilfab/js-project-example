@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "browser-sync": "node_modules/.bin/browser-sync start --server --directory"
   },
   "author": "Tilf AB",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.7.12",
     "jspm": "^0.15.7"
   },
   "jspm": {

@@ -1,11 +1,10 @@
 {
   "name": "js-project-example",
-  "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "A basic Javascript project using JSPM, Babel, Karma, Jasmine and PhantomJS",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "browser-sync": "node_modules/.bin/browser-sync start --server src"
+    "test": "node_modules/.bin/karma start --single-run",
+    "server": "node_modules/.bin/browser-sync start --server src"
   },
   "author": "Tilf AB",
   "license": "ISC",

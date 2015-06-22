@@ -21,20 +21,19 @@ Use Babel as ES6 transpiler
 
 1. `npm install karma --save-dev`
 
-2. `npm install karma-jasmine karma-jspm --save-dev`
+2. `npm install karma-jasmine karma-jspm karma-phantomjs-launcher npm install karma-phantomjs-shim --save-dev`
 
-3. `./node_modules/.bin/karma init`  
+3. `node_modules/.bin/karma init`  
 See [Karmas configuration](http://karma-runner.github.io/0.12/intro/configuration.html)
 
 4. Edit `karma.conf.js`
 
-        frameworks: ['jasmine', 'jspm'],
+        frameworks: ['jasmine', 'jspm', 'phantomjs-shim'],
         
-        // list of files / patterns to load in the browser
         files: [],
         
         jspm: {
-            loadFiles: ['src/app/**/*.js', 'test/**/*.js'],
+            loadFiles: ['test/**/*.js'],
             config: "src/config.js",
             packages: "src/jspm_packages/",
         },
@@ -42,7 +41,4 @@ See [Karmas configuration](http://karma-runner.github.io/0.12/intro/configuratio
         proxies: {
           '/base/jspm_packages/': '/base/src/jspm_packages/'
         },
-
-5. Add `.bind()` polyfill to `test/` so that PhantomJS can cope  
-See [https://github.com/aurelia/skeleton-navigation/issues/47](https://github.com/aurelia/skeleton-navigation/issues/47) for details
 

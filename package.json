@@ -7,7 +7,7 @@
     "server": "node_modules/.bin/browser-sync start --server src"
   },
   "author": "Tilf AB",
-  "license": "ISC",
+  "license": "Apache 2.0",
   "devDependencies": {
     "browser-sync": "^2.7.12",
     "jasmine-core": "^2.3.4",

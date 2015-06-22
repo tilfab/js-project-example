@@ -17,7 +17,7 @@ module.exports = function(config) {
     files: [],
 
     jspm: {
-        loadFiles: ['src/app/**/*.js', 'test/**/*.js'],
+        loadFiles: ['test/polyfill.bind.js', 'src/app/**/*.js', 'test/**/*.js'],
         config: "src/config.js",
         packages: "src/jspm_packages/",
     },
@@ -62,7 +62,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ["PhantomJS"],
+    browsers: ['PhantomJS'],
 
 
     // Continuous Integration mode

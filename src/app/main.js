@@ -10,4 +10,4 @@ class HelloTilf extends React.Component {
     }
 }
 
-React.render(<HelloTilf />, document.body);
+React.render(<HelloTilf />, document.querySelector(".app"));

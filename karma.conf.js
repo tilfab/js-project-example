@@ -17,7 +17,7 @@ module.exports = function(config) {
     files: [],
 
     jspm: {
-        loadFiles: ['test/polyfill.bind.js', 'src/app/**/*.js', 'test/**/*.js'],
+        loadFiles: ['test/polyfill.bind.js', 'test/**/*.js'],
         config: "src/config.js",
         packages: "src/jspm_packages/",
     },

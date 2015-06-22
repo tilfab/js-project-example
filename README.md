@@ -43,6 +43,6 @@ See [Karmas configuration](http://karma-runner.github.io/0.12/intro/configuratio
           '/base/jspm_packages/': '/base/src/jspm_packages/'
         },
 
-5. Add `.bind()` to `test/` polyfill so that PhantomJS can cope  
+5. Add `.bind()` polyfill to `test/` so that PhantomJS can cope  
 See [https://github.com/aurelia/skeleton-navigation/issues/47](https://github.com/aurelia/skeleton-navigation/issues/47) for details
 

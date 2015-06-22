@@ -17,14 +17,7 @@ Lock JSPM dependency for this project (if your global JSPM is upgraded)
 3. `jspm init`  
 Use Babel as ES6 transpiler
 
-#### React
-
-1. Go in to `src/config.js` add `"blacklist": []` to `babelOptions`-property  
-Removes React from babel blacklist... will be removed as of React 0.17
-
-2. `jspm install react`
-
-#### Karma, Jasmine
+#### Karma, Jasmine, PhantomJS
 
 1. `npm install karma --save-dev`
 
@@ -49,4 +42,7 @@ See [Karmas configuration](http://karma-runner.github.io/0.12/intro/configuratio
         proxies: {
           '/base/jspm_packages/': '/base/src/jspm_packages/'
         },
+
+5. Add `.bind()` to `test/` polyfill so that PhantomJS can cope  
+See [https://github.com/aurelia/skeleton-navigation/issues/47](https://github.com/aurelia/skeleton-navigation/issues/47) for details
 
